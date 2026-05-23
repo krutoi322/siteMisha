@@ -1,0 +1,201 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-image: url('images/300kmcrush.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+body::before{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.67);
+	z-index: 0;
+}
+.container {
+	text-align: center;
+	z-index: 1;
+}
+
+.error-code {
+	margin-bottom: 20px;
+}
+
+.glitch {
+	font-family: 'Poppins', sans-serif;
+	font-size: 150px;
+	font-weight: 900;
+	color: #ffffff;
+	position: relative;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	animation: glitch 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.glitch::before {
+	left: 2px;
+	text-shadow: -2px 0 #ff00c1;
+	clip: rect(44px, 450px, 56px, 0);
+	animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+	left: -2px;
+	text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+	animation: glitch-anim2 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+	0%, 100% {
+		text-shadow: 2px 2px 0 #ff00c1, -2px -2px 0 #00fff9;
+	}
+	25% {
+		text-shadow: -2px 2px 0 #ff00c1, 2px -2px 0 #00fff9;
+	}
+	50% {
+		text-shadow: 2px -2px 0 #ff00c1, -2px 2px 0 #00fff9;
+	}
+	75% {
+		text-shadow: -2px -2px 0 #ff00c1, 2px 2px 0 #00fff9;
+	}
+}
+
+@keyframes glitch-anim {
+	0% {
+		clip: rect(31px, 9999px, 94px, 0);
+	}
+	10% {
+		clip: rect(98px, 9999px, 42px, 0);
+	}
+	20% {
+		clip: rect(43px, 9999px, 55px, 0);
+	}
+	30% {
+		clip: rect(17px, 9999px, 40px, 0);
+	}
+	40% {
+		clip: rect(75px, 9999px, 6px, 0);
+	}
+	50% {
+		clip: rect(30px, 9999px, 87px, 0);
+	}
+	60% {
+		clip: rect(90px, 9999px, 19px, 0);
+	}
+	70% {
+		clip: rect(11px, 9999px, 48px, 0);
+	}
+	80% {
+		clip: rect(67px, 9999px, 28px, 0);
+	}
+	90% {
+		clip: rect(36px, 9999px, 100px, 0);
+	}
+	100% {
+		clip: rect(58px, 9999px, 32px, 0);
+	}
+}
+
+@keyframes glitch-anim2 {
+	0% {
+		clip: rect(65px, 9999px, 100px, 0);
+	}
+	10% {
+		clip: rect(48px, 9999px, 53px, 0);
+	}
+	20% {
+		clip: rect(16px, 9999px, 58px, 0);
+	}
+	30% {
+		clip: rect(51px, 9999px, 96px, 0);
+	}
+	40% {
+		clip: rect(14px, 9999px, 34px, 0);
+	}
+	50% {
+		clip: rect(71px, 9999px, 81px, 0);
+	}
+	60% {
+		clip: rect(69px, 9999px, 43px, 0);
+	}
+	70% {
+		clip: rect(86px, 9999px, 27px, 0);
+	}
+	80% {
+		clip: rect(23px, 9999px, 99px, 0);
+	}
+	90% {
+		clip: rect(45px, 9999px, 63px, 0);
+	}
+	100% {
+		clip: rect(60px, 9999px, 87px, 0);
+	}
+}
+
+.error-message h2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #00c8b4;
+	margin-bottom: 15px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.error-message p {
+	font-size: 22px;
+	color: #ffffff;
+	font-weight: 300;
+	letter-spacing: 2px;
+	opacity: 0.8;
+	margin-bottom: 40px;
+}
+
+.home-btn {
+	display: inline-block;
+	padding: 14px 40px;
+	border: 2px solid #00c8b4;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background 0.3s, color 0.3s;
+}
+
+.home-btn:hover {
+	background: #00c8b4;
+	color: #000000;
+}

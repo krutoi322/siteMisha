@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GodsOfGermany - Про автомобили</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="author" href="https://github.com/krutoi322">
+</head>
+<body>
+	
+	<input type="checkbox" id="nav-toggle" class="nav-checkbox" />
+    <aside class="slide-menu">
+        <div class="slide-menu__top">
+            <a href="index.html" class="slide-menu__logo">
+                <div class="logo-circle">
+                    <span class="letter-g">G</span>
+                    <span class="logo-text">odsOfGermany</span>
+                </div>
+                <span class="logo-name">GodsOfGermany</span>
+            </a>
+            <label for="nav-toggle" class="slide-menu__close" aria-label="Закрыть">&#10005;</label>
+        </div>
+        <nav class="slide-menu__nav">
+            <a href="О САЙТЕ.html">О сайте</a>
+            <div class="slide-dropdown">
+                <input type="checkbox" id="sd-cars" class="slide-dd-toggle" />
+                <label for="sd-cars" class="slide-dd-label">
+                    <span class="slide-dd-dot"></span>
+                    Про автомобили
+                    <span class="slide-dd-arrow active">▾</span>
+                </label>
+                <div class="slide-dd-sub">
+                    <a href="ПРО АВТОМОБИЛИ.html#audi">Audi</a>
+                    <a href="ПРО АВТОМОБИЛИ.html#bmw">BMW</a>
+                    <a href="ПРО АВТОМОБИЛИ.html#mercedes">Mercedes-Benz</a>
+                    <a href="ПРО АВТОМОБИЛИ.html#volkswagen">Volkswagen</a>
+                    <a href="ПРО АВТОМОБИЛИ.html#porsche">Porsche</a>
+                </div>
+            </div>
+
+            <div class="slide-dropdown">
+                <input type="checkbox" id="sd-sport" class="slide-dd-toggle" />
+                <label for="sd-sport" class="slide-dd-label">
+                    <span class="slide-dd-dot"></span>
+                    Автоспорт
+                    <span class="slide-dd-arrow">▾</span>
+                </label>
+                <div class="slide-dd-sub">
+                    <a href="АВТОСПОРТ.html#rally">Ралли</a>
+                    <a href="АВТОСПОРТ.html#drift">Дрифт</a>
+                    <a href="АВТОСПОРТ.html#formula1">Формула-1</a>
+                </div>
+            </div>
+
+            <div class="slide-dropdown">
+                <input type="checkbox" id="sd-articles" class="slide-dd-toggle" />
+                <label for="sd-articles" class="slide-dd-label">
+                    <span class="slide-dd-dot"></span>
+                    Полезные статьи
+                    <span class="slide-dd-arrow">▾</span>
+                </label>
+                <div class="slide-dd-sub">
+                    <a href="ПОЛЕЗНЫЕ СТАТЬИ.html#maintenance">Обслуживание</a>
+                    <a href="ПОЛЕЗНЫЕ СТАТЬИ.html#tuning">Тюнинг</a>
+                    <a href="ПОЛЕЗНЫЕ СТАТЬИ.html#buying">Покупка авто</a>
+                </div>
+            </div>
+            <a href="СООБЩЕСТВО.html">Сообщество</a>
+            <a href="КОНТАКТЫ.html">Контакты</a>
+			<a href="О РАЗРАБОТЧИКЕ.html">О разработчике</a>
+			<a href="ГАЛЕРЕЯ САЙТА.html">Галерея</a>
+			<a href="КАРТА САЙТА.html">Карта сайта</a>
+        </nav>
+        <div class="slide-menu__footer">© 2026 GodsOfGermany</div>
+    </aside>
+
+    <label for="nav-toggle" class="slide-overlay"></label>
+
+    <header>
+        <label for="nav-toggle" class="menu-btn" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+        </label>
+        <a href="index.html" class="logo">
+            <div class="logo-circle">
+                <span class="letter-g">G</span>
+                <span class="logo-text">odsOfGermany</span>
+            </div>
+        </a>
+        <span class="header-title">Gods<span>Of</span>Germany</span>
+		
+		<nav>
+            <ul>
+                <li><a href="О САЙТЕ.html">О сайте</a></li>
+                <li><a href="ПРО АВТОМОБИЛИ.html"class="active">Про автомобили</a></li>
+                <li class="has-dropdown">
+                    <a href="АВТОСПОРТ.html">Автоспорт <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="АВТОСПОРТ.html#rally">Ралли</a></li>
+                        <li><a href="АВТОСПОРТ.html#drift">Дрифт</a></li>
+                        <li><a href="АВТОСПОРТ.html#formula1">Формула-1</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="ПОЛЕЗНЫЕ СТАТЬИ.html">Полезные статьи <span class="arrow">▾</span></a>
+                    <ul class="dropdown">
+                        <li><a href="ПОЛЕЗНЫЕ СТАТЬИ.html#maintenance">Обслуживание</a></li>
+                        <li><a href="ПОЛЕЗНЫЕ СТАТЬИ.html#tuning">Тюнинг</a></li>
+                        <li><a href="ПОЛЕЗНЫЕ СТАТЬИ.html#buying">Покупка авто</a></li>
+                    </ul>
+                </li>
+                <li><a href="СООБЩЕСТВО.html">Сообщество</a></li>
+                <li><a href="КОНТАКТЫ.html">Контакты</a></li>
+				<li><a href="О РАЗРАБОТЧИКЕ.html">О разработчике</a></li>
+				<li><a href="ГАЛЕРЕЯ САЙТА.html">Галерея</a></li>
+				<li><a href="КАРТА САЙТА.html">Карта сайта</a></li>
+            </ul>
+        </nav>
+
+        <label for="auth-toggle" class="auth-btn" aria-label="Войти или зарегистрироваться">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span>Войти</span>
+        </label>
+    </header>
+	
+	<main>
+		<div class="two-col-grid">
+		
+			<div class="grid-card">
+				<h2>Легковые автомобили</h2>
+				<pre>Классика немецкого автопрома - от Volkswagen Passat до Mercedes E-Class. 
+Самые частовстречающиеся и пропитанные историей легендарных компаний немецкие лайнеры.</pre>
+				<div class="imgs-row">
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/passat.webp" alt="Volkswagen Passat">
+						<p class="img-caption">Volkswagen Passat — немецкая надёжность в каждом километре</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/e_class.jpg" alt="Mercedes E-Class">
+						<p class="img-caption">Mercedes-Benz E-Class — эталон комфорта и элегантности</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="grid-card">
+				<h2>Спортивные автомобили</h2>
+				<pre>Porshe 911, BMW M3, Audi RS - лучшие спортивные модели немецких марок.
+Динамика, управляемость и адреналин в каждом повороте</pre>
+				<div class="imgs-row-3">
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/911.webp" alt="Porsche 911">
+						<p class="img-caption">Porsche 911 — икона спортивного мира</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/bmwM3.jpg" alt="BMW M3">
+						<p class="img-caption">BMW M3 — агрессия и точность в одном</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/RS7.webp" alt="Audi RS7">
+						<p class="img-caption">Audi RS7 — мощь с элегантным силуэтом</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-card">
+				<h2>Внедорожники и кроссоверы</h2>
+				<pre>BMW X5, Audi Q8, Volkswagen Touareg, Mercedes GLE - немецкие внедорожники сочетают роскошь и проходимость. Выберите, какой подходит именно вам.</pre>
+				<div class="imgs-row-3">
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/bmwX5.png" alt="BMW X5">
+						<p class="img-caption">BMW X5 — роскошь вне дорог</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/Touareg.jpg" alt="Volkswagen Touareg">
+						<p class="img-caption">VW Touareg — премиум в каждой детали</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/GLE.webp" alt="Mercedes GLE">
+						<p class="img-caption">Mercedes GLE — флагман среди кроссоверов</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid-card">
+				<h2>Электромобили</h2>
+				<pre>Volkswagen ID.4, BMW iX, Mercedes EQS, Audi e-tron - немецкие производители активно переходят на электрическую тягу.</pre>
+				<div class="imgs-row-4">
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/ID4.jpg" alt="Volkswagen ID.4">
+						<p class="img-caption">Volkswagen ID.4 — электрическое будущее VW</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/IX.jpg" alt="BMW iX">
+						<p class="img-caption">BMW iX — электрическая роскошь от BMW</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/EQS.jpg" alt="Mercedes EQS">
+						<p class="img-caption">Mercedes EQS — флагманский электроседан</p>
+					</div>
+					<div class="img-wrapper">
+						<img class="gallery-img" src="images/E_tron.jpg" alt="Audi e-tron">
+						<p class="img-caption">Audi e-tron — электро-quattro в действии</p>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+	</main>
+	
+	<footer>
+        <div class="footer-left">
+        <p>Контактная информация и обратная связь:</p>
+        <div class="footer-contact">
+            <div class="f-icon"><img src="images/letter_icon-icons.com_67753.png" alt="email"></div>
+            Почта: testsite322@gmail.com
+        </div>
+        <div class="footer-contact">
+            <div class="f-icon1"><img src="images/social_13797138.png" alt="Telegram"></div>
+            Телеграмм: @testsite322
+        </div>
+    </div>
+	
+	<div class="footer-center">
+        <a href="https://github.com/krutoi322" target="_blank">
+            Наш GitHub
+        </a>
+    </div>
+
+    <div class="footer-center">
+        <a href="https://www.bartc.by" target="_blank" title="Барановичский колледж технологий и сервиса — БТК">
+            Колледж БТК
+        </a>
+    </div>
+	
+	<div class="footer-center">
+        <a href="О САЙТЕ.html#privacy">Политика конфиденциальности</a>
+    </div>
+	
+	<div class="footer-center">
+        <a href="КАРТА САЙТА.html#privacy">Карта сайта</a>
+    </div>
+	
+    <div class="footer-right">
+        © 2026. GodsOfGermany auto site
+    </div>
+	<div class="footer-right">
+            Все права защищены.
+        </a>
+    </div>
+    </footer>
+		
+		<input type="checkbox" id="auth-toggle" class="nav-checkbox" />
+    <input type="radio" name="auth-tab" id="tab-login" class="nav-checkbox" checked />
+    <input type="radio" name="auth-tab" id="tab-register" class="nav-checkbox" />
+
+    <label for="auth-toggle" class="auth-overlay"></label>
+
+    <div class="auth-modal">
+
+        <label for="auth-toggle" class="auth-modal__close" aria-label="Закрыть">&#10005;</label>
+
+        <div class="auth-modal__logo">
+            <div class="logo-circle logo-circle--sm">
+                <span class="letter-g">G</span>
+                <span class="logo-text">odsOfGermany</span>
+            </div>
+        </div>
+
+        <div class="auth-tabs">
+            <label for="tab-login" class="auth-tab">Войти</label>
+            <label for="tab-register" class="auth-tab">Регистрация</label>
+            <div class="auth-tab-indicator"></div>
+        </div>
+
+        <div class="auth-form auth-form--login">
+            <div class="auth-field">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" placeholder="example@mail.com" autocomplete="email" />
+            </div>
+            <div class="auth-field">
+                <label for="loginPassword">Пароль</label>
+                <input type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password" />
+            </div>
+            <a href="404.html" class="auth-submit">Войти</a>
+            <p class="auth-hint">Нет аккаунта? <label for="tab-register" class="auth-switch">Зарегистрироваться</label></p>
+        </div>
+
+        <div class="auth-form auth-form--register">
+            <div class="auth-field">
+                <label for="regName">Имя пользователя</label>
+                <input type="text" id="regName" placeholder="GodOfGermany_" autocomplete="username" />
+            </div>
+            <div class="auth-field">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" placeholder="example@mail.com" autocomplete="email" />
+            </div>
+            <div class="auth-field">
+                <label for="regPassword">Пароль</label>
+                <input type="password" id="regPassword" placeholder="••••••••" autocomplete="new-password" />
+            </div>
+            <div class="auth-field">
+                <label for="regPassword2">Подтвердите пароль</label>
+                <input type="password" id="regPassword2" placeholder="••••••••" autocomplete="new-password" />
+            </div>
+            <a href="404.html" class="auth-submit">Зарегистрироваться</a>
+            <p class="auth-hint">Уже есть аккаунт? <label for="tab-login" class="auth-switch">Войти</label></p>
+        </div>
+
+    </div>
+
+    <div id="lightbox" class="lb-overlay" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+        <button class="lb-close" id="lb-close" aria-label="Закрыть">&#10005;</button>
+        <button class="lb-arrow lb-prev" id="lb-prev" aria-label="Предыдущее">&#8249;</button>
+        <div class="lb-img-wrap">
+            <img id="lb-img" src="" alt="" />
+            <p id="lb-caption" class="lb-caption"></p>
+        </div>
+        <button class="lb-arrow lb-next" id="lb-next" aria-label="Следующее">&#8250;</button>
+        <div id="lb-counter" class="lb-counter"></div>
+    </div>
+
+    
+    <script>
+    (function () {
+        var imgs = [];
+        var cur  = 0;
+        var overlay = document.getElementById('lightbox');
+        var lbImg   = document.getElementById('lb-img');
+        var lbCap   = document.getElementById('lb-caption');
+        var lbCnt   = document.getElementById('lb-counter');
+
+        function open(index) {
+            cur = ((index % imgs.length) + imgs.length) % imgs.length;
+            var el = imgs[cur];
+            lbImg.src = el.src;
+            lbImg.alt = el.alt;
+            var wrapper = el.closest('.img-wrapper');
+            var capEl = wrapper ? wrapper.querySelector('.img-caption') : null;
+            lbCap.textContent = capEl ? capEl.textContent : el.alt;
+            lbCnt.textContent = (cur + 1) + ' / ' + imgs.length;
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function close() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function prev() { open(cur - 1); }
+        function next() { open(cur + 1); }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            imgs = Array.from(document.querySelectorAll('.gallery-img'));
+            imgs.forEach(function (img, i) {
+                img.addEventListener('click', function () { open(i); });
+            });
+
+            document.getElementById('lb-close').addEventListener('click', close);
+            document.getElementById('lb-prev').addEventListener('click', prev);
+            document.getElementById('lb-next').addEventListener('click', next);
+
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) close();
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (!overlay.classList.contains('active')) return;
+                if (e.key === 'ArrowLeft')  prev();
+                if (e.key === 'ArrowRight') next();
+                if (e.key === 'Escape')     close();
+            });
+        });
+    })();
+    </script>
+
+</body>
+</html>
